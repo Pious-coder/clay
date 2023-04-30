@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200');
+
+:root{
+    --main-color:#cd5c5c;
+    --black:rgb(78, 76, 76);
+    --light-color:#777;
+    --bg:#fceae9;
+    --border:.1rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:; padding:;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    background: #fff ;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    align-items: center;
+    margin-right: 300px;
+    color:var(--black);
+    font-weight: bolder;
+    background: transparent;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 10rem;
+    background:var(--bg);
+    position: relative;
+}
+
+.home p{
+    font-size: 14px;
+}
+.home h3{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.home span{
+    color:var(--main-color);
+    border-radius: .5rem;
+    background: var(--bg);
+    padding:0 1.5rem;
+}
+
+#arrow{
+    color: var(--black);
+    margin-left:-80px;
+    font-size: 20px;
+    background: transparent;
+}
+
+.header i{
+    background: transparent;
+}
+
+.navbar{
+    background: transparent;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+    background: transparent;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+.review{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.review h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+    color: var(--black);
+}
+
+.slide-row{
+    display: flex;
+    width: 3200px;
+}
+
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
