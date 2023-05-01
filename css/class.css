@@ -30,6 +30,7 @@
     color:var(--black);
     font-weight: bolder;
     background: transparent;
+    text-decoration: none;
 }
 
 #home{
@@ -129,9 +130,6 @@
 } 
 
 @media (min-width: 320px) {
-    .header{
-        width: auto;
-    }
 
     .board{
         width: auto;
@@ -147,6 +145,7 @@
 }
 
 @media (min-width: 768px) {
+
     .board{
         width: 100%;
     }
@@ -159,4 +158,38 @@
         display: initial;
     }
 
+}
+
+@media (max-width: 780px) {
+
+    .header .logo{
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: -30px;
+    }
+
+    .header #home{
+        margin-left: 10px;
+    }
+
+    .intro p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 470px) {
+    .board{
+        height: 70%;
+    }
+    .header .logo{
+        font-size: 20px;
+    }
+
+    #home{
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+    .intro p{
+        font-size: 12px;
+    }
 }
