@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 :root{
     --main-color:#cd5c5c;
     --black:rgb(78, 76, 76);
-    --light-color:#777;
+    --color-secodary-dark: #464C70;
     --bg:#fceae9;
     --border:.1rem solid rgba(0,0,0,.1);
    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -11,26 +10,12 @@
 
 *{
     font-family: 'Nunito', sans-serif;
-    margin:; padding:;
-    box-sizing: border-box;
-    background-color: var(--bg);
-    outline: none; border:none;
-    text-decoration: none;
 }
-
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
-    overflow-x: hidden;
-}
-
 
 .header{
-    position: fixed;
-    top:0; left:0; right: 0;
+    position: relative;
     z-index: 1000;
-    background: #fff ;
+    background: whitesmoke;
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
@@ -47,77 +32,131 @@ html{
     background: transparent;
 }
 
-.home{
+#home{
+    color: var(--black);
+    margin-left: -80px;
+    font-size: 25px;
+}
+
+.intro{
+    font-size: 18px;
+    color: var(--black);
+}
+.container{
+    height: 88vh; 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    padding-top: 10rem;
-    background:var(--bg);
-    position: relative;
 }
 
-.home p{
-    font-size: 14px;
-}
-.home h3{
-    font-size: 20px;
-    margin-left: 50px;
-}
-
-.home span{
-    color:var(--main-color);
-    border-radius: .5rem;
-    background: var(--bg);
-    padding:0 1.5rem;
-}
-
-#arrow{
-    color: var(--black);
-    margin-left:-80px;
-    font-size: 20px;
-    background: transparent;
-}
-
-.header i{
-    background: transparent;
-}
-
-.navbar{
-    background: transparent;
-}
-
-.header .navbar a{
-    font-size: 1.7rem;
-    color: var(--light-color);
-    margin-left: 2rem;
-    background: transparent;
-}
-
-.header .navbar a:hover{
-    color:var(--main-color);
-}
-
-.review{
-    height: 100vh;
+.board{
+    max-width: 987px;
     width: 100%;
-    position: relative;
-}
-
-.review h1{
+    background-color: var(--main-color);
     text-align: center;
-    padding-top: 80px;
-    font-size: 40px;
-    color: var(--black);
+    border-radius: 8px;
+    padding: 4em 0;
 }
 
-.slide-row{
+.text-light{
+    color: var(--color-secodary-dark);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.swiper {
+    width: 600px;
+    height: auto;
+  }
+
+.swiper .swiper-slide .flex{
+    margin: 3em 0;
     display: flex;
-    width: 3200px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.slide-col{
-    width: 800px;
-    height: 400px;
+.swiper .swiper-slide .comments{
+    background-color: var(--bg);
+    padding: 1.5em 2em;
+    width: 50%;
+    border-radius: 5px;
+    font-size: .9em;
     position: relative;
+}
+
+.swiper .swiper-slide .comments::after{
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--bg);
+    z-index: -99;
+}
+
+
+.swiper .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.swiper .profile img{
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--black);
+    margin: 10px 0;
+}
+
+.swiper .profile > a{
+    text-decoration: none;
+    color: var(--bg);
+}
+
+.swiper .profile > span{
+    color: var(--color-secodary-dark);
+    font-size: .8em;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+    color: var(--color-secodary-dark);
+    display: none;
+} 
+
+@media (min-width: 320px) {
+    .header{
+        width: auto;
+    }
+
+    .board{
+        width: auto;
+    }
+
+    .swiper {
+        width: 320px;
+      }
+
+      .board > h1, p{
+          padding: 0 2em;
+      }
+}
+
+@media (min-width: 768px) {
+    .board{
+        width: 100%;
+    }
+
+    .swiper {
+        width: 600px;
+      }
+
+    .swiper .swiper-button-prev, .swiper-button-next{
+        display: initial;
+    }
+
 }

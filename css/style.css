@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,2000,300;0,400;0,600;0,700;1,200;1,300&;display=swap');
 
 :root{
     --main-color:#cd5c5c;
@@ -15,7 +15,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .3s ease-out;
 }
 
@@ -606,9 +605,8 @@ section{
     .header{
         padding:2rem;
     }
-
     section{
-        padding:2rem;
+        padding: 2rem;
     }
 
 }
@@ -653,7 +651,8 @@ section{
         text-align: center;
     }
 
-}
+}    
+
 
 @media (max-width:450px){
 

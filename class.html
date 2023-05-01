@@ -2,81 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Everyday classes</title>
+    <title>Everyday Classes</title>
 
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/class.css">
+
 </head>
 <body>
-    
-<!-- header section starts  -->
+    <!-- header section starts  -->
 
 <header class="header">
-    <a href="index.html" id="arrow"> <i class="fas fa-arrow-left"></i></a>
-    <a href="#" class="logo">Everyday classes</a>
-</header>
+        <a href="index.html" id="home"> <i class="fas fa-home"></i></a>
+        <a href="#" class="logo">Everyday classes</a>
+    </header>
+    
+    <!-- header section ends -->
+    <div class="intro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pariatur quibusdam doloremque eveniet aspernatur. Odit quisquam deleniti nobis dolorum voluptate?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem quaerat magni aut a quia officiis ipsa illum, incidunt labore? Repellat molestiae hic obcaecati ratione odio nemo similique Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quo ipsum officia vel quod laborum illum iure obcaecati, inventore facere aperiam vitae iusto dolorum aut. Fuga dignissimos doloremque exercitationem culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt molestiae consectetur facilis quis quasi cumque esse excepturi fugit, corrupti natus voluptatibus dolores assumenda dolore officia incidunt necessitatibus quas expedita.</p>
+    </div>
+    <div class="container">
+        <div class="board">
+            <h2 class="text-light">Remarks from our students</h2>
+            <p class="text-light">Some of our fulfilled students reviews</p>
 
-<!-- header section ends -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Non, placeat quisquam? Animi sunt, dignissimos est sit reiciendis iste ipsa error?
+                        </div>
+                        <div class="profile">
+                            <img src="images/avatar1.JPG" alt="">
+                            <a href="#">John V. Bellanmy</a>
+                            <span>Weekends student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+                            Non, placeat quisquam? Animi sunt, dignissimos est sit reiciendis iste ipsa error?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         </div>
+                        <div class="profile">
+                            <img src="images/avatar2.JPG" alt="">
+                            <a href="#">John V. Bellanmy</a>
+                            <span>Premium plan student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+                            Animi sunt, ipsa error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Non, placeat quisquam? dignissimos est sit reiciendis iste 
+                        </div>
+                        <div class="profile">
+                            <img src="images/avatar3.JPG" alt="">
+                            <a href="#">John V. Bellanmy</a>
+                            <span>Basic plan student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                   <div class="flex">
+                       <div class="comments">
+                            Animi sunt, ipsa error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Non, placeat quisquam? dignissimos est sit reiciendis iste 
+                       </div>
+                       <div class="profile">
+                           <img src="images/avatar4.JPG" alt="">
+                           <a href="#">John V. Bellanmy</a>
+                           <span>Standard plan student</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        
+            </div>
 
-<!-- home section starts  -->
+        </div>
+    </div>
 
-<section class="home" id="home">
-
-    <div class="content">
-        <h3>About<span>our classes
-        </span></h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porro nobis sunt mollitia nequeLorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porro nobis sunt mollitia neque!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porro nobis sunt mollitia neque!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porro nobis sunt mollitia neque!</p>
-</section>
-
-<!-- home section ends -->
-<!--review section starts-->
-
-  <div class="review">
-      <h1>Our students remarks</h1>
-      <div class="slide-row">
-          <div class="slide-col">
-             <div class="student-text">
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porronobis sunt mollitia nequeLorem</p>
-                   <h3>Jane Doe</h3>
-                   <p>weekend student</p>
-               </div>
-               <div class="student-img">
-                   <img src="images/avatar1.JPG">
-              </div>
-              <div class="student-text">
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porronobis sunt mollitia nequeLorem</p>
-                   <h3>Jane Doe</h3>
-                   <p>weekend student</p>
-               </div>
-               <div class="student-img">
-                   <img src="images/avatar2.JPG">
-              </div>
-              <div class="student-text">
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porronobis sunt mollitia nequeLorem</p>
-                   <h3>John Doe</h3>
-                   <p>Basic plan student</p>
-               </div>
-               <div class="student-img">
-                   <img src="images/avatar3.JPG">
-              </div>
-              <div class="student-text">
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum non magni accusantium ullam debitis dignissimos porronobis sunt mollitia nequeLorem</p>
-                   <h3>Jane Doe</h3>
-                   <p>Premium plan student</p>
-               </div>
-               <div class="student-img">
-                   <img src="images/avatar4.JPG">
-              </div>
-          </div>
-      </div>
-  </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/class.js"></script>
 </body>
 </html>
