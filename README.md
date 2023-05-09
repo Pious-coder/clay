@@ -1,1 +1,3 @@
-Ceramicist website created with HTML,CSS and JavaScript
+Ceramicist website created with HTML
+CSS 
+JavaScript
